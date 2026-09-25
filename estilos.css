@@ -1,0 +1,1012 @@
+/* ========================================
+   CONFIGURACIÓN GENERAL
+======================================== */
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf7;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+/* ========================================
+   BARRA DE NAVEGACIÓN
+======================================== */
+
+.navbar {
+    width: 100%;
+    padding: 22px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fffaf7;
+
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #405f50;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #405f50;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c56f52;
+}
+
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+    min-height: 85vh;
+
+    padding: 70px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background-color: #fffaf7;
+}
+
+
+/* TEXTO DEL HERO */
+
+.hero-text {
+    max-width: 600px;
+}
+
+.etiqueta {
+    color: #c56f52;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+
+    line-height: 1.05;
+
+    margin: 0;
+
+    color: #243d32;
+}
+
+.hero h1 span {
+    color: #557a68;
+}
+
+.hero-description {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #626b66;
+
+    margin-top: 25px;
+
+    margin-bottom: 35px;
+
+    max-width: 550px;
+}
+
+
+/* ========================================
+   BOTONES DEL HERO
+======================================== */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #557a68;
+
+    color: white;
+}
+
+.btn-secondary {
+    border: 1px solid #557a68;
+
+    color: #557a68;
+
+    background-color: transparent;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   IMAGEN DEL HERO
+======================================== */
+
+.hero-image {
+    position: relative;
+
+    width: 430px;
+
+    height: 500px;
+
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 220px 220px 30px 30px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.image-decoration {
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: #e8d3c7;
+
+    border-radius: 220px 220px 30px 30px;
+
+    top: 20px;
+
+    left: 20px;
+}
+
+
+/* ========================================
+   SECCIONES
+======================================== */
+
+section {
+    padding: 80px 10%;
+}
+
+section h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+
+    color: #243d32;
+}
+
+section > p {
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    text-align: center;
+
+    line-height: 1.7;
+
+    color: #626b66;
+}
+
+
+/* ========================================
+   CURSOS
+======================================== */
+
+#cursos {
+    background-color: #f5eee9;
+}
+
+.contenedor-cursos {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+.curso {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.curso:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.curso h3 {
+    color: #557a68;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+.curso p {
+    line-height: 1.6;
+
+    color: #626b66;
+}
+
+
+/* ========================================
+   BOTONES DE LOS CURSOS
+======================================== */
+
+button {
+    background-color: #557a68;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #405f50;
+
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   SECCIONES RESTANTES
+======================================== */
+
+#inicio {
+    background-color: #fffaf7;
+}
+
+#emprendimiento {
+    background-color: #ffffff;
+}
+
+#recursos {
+    background-color: #f5eee9;
+}
+
+
+/* ========================================
+   DISEÑO PARA CELULAR
+======================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 50px;
+    }
+
+    .hero-text {
+        max-width: 700px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 350px;
+
+        height: 420px;
+    }
+
+    .contenedor-cursos {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        width: 280px;
+
+        height: 350px;
+    }
+
+    section {
+        padding: 60px 7%;
+    }
+}
+/* =========================
+   BLOQUE 2 - COMUNIDAD
+   ========================= */
+
+.comunidad {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 10%;
+    background-color: #fffaf7;
+}
+
+.comunidad-imagen {
+    flex: 1;
+}
+
+.comunidad-imagen img {
+    width: 100%;
+    max-width: 500px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.comunidad-contenido {
+    flex: 1;
+}
+
+.etiqueta {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.comunidad-contenido h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.comunidad-contenido p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.boton-comunidad {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 13px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+
+    .comunidad {
+        flex-direction: column;
+        padding: 70px 7%;
+        text-align: center;
+    }
+
+    .comunidad-imagen img {
+        height: 300px;
+    }
+
+    .comunidad-contenido h2 {
+        font-size: 32px;
+    }
+
+}
+/* =========================
+   BLOQUE 3 - PILARES
+   ========================= */
+
+.pilares {
+    padding: 100px 10%;
+    background-color: #ffffff;
+}
+
+.pilares-titulo {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.pilares-titulo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.pilares-titulo > p:last-child {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.tarjetas-pilares {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.tarjeta {
+    padding: 35px 25px;
+    background-color: #fffaf7;
+    border-radius: 20px;
+    text-align: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.icono {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.tarjeta h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+/* =========================
+   BLOQUE 4 - IMPACTO
+   ========================= */
+
+.impacto {
+    padding: 90px 10%;
+    text-align: center;
+    background-color: #f4eee9;
+}
+
+.impacto-titulo {
+    max-width: 700px;
+    margin: 0 auto 55px;
+}
+
+.impacto-titulo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.estadistica span {
+    display: block;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.estadistica p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+/* =========================
+   BLOQUE 6 - FOOTER
+   ========================= */
+
+.footer {
+    padding: 60px 10% 25px;
+    background-color: #96baa9;
+}
+
+.footer-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 40px;
+}
+
+.footer h3,
+.footer h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer-contacto a {
+    text-decoration: none;
+}
+
+.footer-derechos {
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.footer-derechos p {
+    font-size: 12px;
+}
+/* =========================
+   PAGINAS DE FORMULARIO
+   ========================= */
+
+.pagina-formulario {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    background-color: #fffaf7;
+}
+
+
+.formulario-contenedor {
+    width: 100%;
+    max-width: 480px;
+}
+
+
+.formulario {
+    background-color: #ffffff;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+.formulario .etiqueta {
+    text-align: center;
+}
+
+
+.formulario h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 36px;
+
+    text-align: center;
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+}
+
+
+.formulario-descripcion {
+    text-align: center;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+.formulario form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.formulario label {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+
+.formulario input {
+    padding: 14px 16px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+.formulario input:focus {
+    border-color: #999;
+}
+
+
+.formulario button {
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+
+.formulario button:hover {
+    transform: translateY(-2px);
+}
+
+
+.formulario-enlace {
+    text-align: center;
+
+    font-size: 13px;
+
+    margin-top: 25px;
+}
+
+
+.formulario-enlace a {
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.volver {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 13px;
+
+    text-decoration: none;
+}
+@media (max-width: 500px) {
+
+    .formulario {
+        padding: 30px 22px;
+    }
+
+    .formulario h1 {
+        font-size: 30px;
+    }
+}
+.hero-botones {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.boton-primario,
+.boton-secundario {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.boton-primario {
+    background-color: #5d8e79;
+    color: white;
+}
+
+.boton-secundario {
+    background-color: transparent;
+    color: #4b7563;
+    border: 1px solid #4b7563;
+}
+
+.boton-primario:hover,
+.boton-secundario:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .hero-botones {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* =========================================
+   MI ESPACIO - RUTA DE AUTONOMÍA
+========================================= */
+
+.pagina-espacio {
+    background-color: #fffaf7;
+    min-height: 100vh;
+}
+
+.espacio-header {
+    padding: 80px 10% 60px;
+    text-align: center;
+    background-color: #f4eee9;
+}
+
+.espacio-marca {
+    max-width: 750px;
+    margin: auto;
+}
+
+.espacio-marca h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.espacio-marca p:not(.etiqueta) {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* RUTA */
+
+.ruta {
+    padding: 90px 10%;
+}
+
+.ruta-titulo {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.ruta-titulo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.ruta-titulo p:not(.etiqueta) {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* TARJETAS */
+
+.tarjetas-ruta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.tarjeta-ruta {
+    padding: 40px 35px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-ruta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.10);
+}
+
+.icono-ruta {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.tarjeta-ruta h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-ruta p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.tarjeta-ruta a {
+    display: inline-block;
+    padding: 11px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-ruta a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .espacio-header {
+        padding: 60px 7% 50px;
+    }
+
+    .espacio-marca h1 {
+        font-size: 36px;
+    }
+
+    .ruta {
+        padding: 70px 7%;
+    }
+
+    .ruta-titulo h2 {
+        font-size: 34px;
+    }
+
+    .tarjetas-ruta {
+        grid-template-columns: 1fr;
+    }
+}
+.boton-cerrar {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+
+    padding: 10px 22px;
+
+    border: 1px solid #2f2927;
+    border-radius: 30px;
+
+    color: #2f2927;
+    background-color: transparent;
+
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.boton-cerrar:hover {
+    background-color: #2f2927;
+    color: white;
+}

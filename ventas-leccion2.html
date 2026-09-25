@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 2 - Técnicas de venta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Emprende Mujer</h1>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="ventas.html">Cursos</a>
+        <a href="index.html#emprendimiento">Mi emprendimiento</a>
+        <a href="index.html#recursos">Recursos</a>
+    </nav>
+</header>
+
+<section>
+
+    <h2>💬 Lección 2: Técnicas de venta</h2>
+
+    <p>
+        Vender es presentar un producto o servicio de una manera
+        clara y mostrarle al cliente cómo puede ayudarle.
+    </p>
+
+    <h3>🛍️ Algunas técnicas de venta</h3>
+
+    <ul>
+        <li>👂 Escuchar las necesidades del cliente.</li>
+        <li>💡 Explicar los beneficios del producto.</li>
+        <li>😊 Tratar al cliente con amabilidad.</li>
+        <li>❓ Resolver sus preguntas.</li>
+        <li>🤝 Ofrecer una solución adecuada.</li>
+    </ul>
+
+    <div class="curso">
+
+        <h3>💡 Ejemplo</h3>
+
+        <p>
+            Una cliente pregunta por una torta para un cumpleaños.
+            En lugar de responder solamente:
+        </p>
+
+        <p>
+            <strong>"La torta cuesta $50.000."</strong>
+        </p>
+
+        <p>
+            La emprendedora puede explicar:
+        </p>
+
+        <p>
+            <strong>
+                "Tenemos tortas personalizadas para cumpleaños.
+                Puedes elegir el sabor y el diseño que quieras.
+                Esta torta cuesta $50.000."
+            </strong>
+        </p>
+
+        <p>
+            De esta manera, la cliente conoce mejor lo que está
+            comprando y los beneficios del producto.
+        </p>
+
+    </div>
+
+    <h3>🎯 Practica tu técnica de venta</h3>
+
+    <p>
+        Imagina que una persona está interesada en tu producto.
+        Completa la siguiente información:
+    </p>
+
+    <label>¿Qué producto o servicio estás ofreciendo?</label>
+    <br>
+
+    <input
+        type="text"
+        id="productoVenta"
+        placeholder="Ejemplo: Tortas personalizadas"
+    >
+
+    <br><br>
+
+    <label>¿Qué beneficio tiene para el cliente?</label>
+    <br>
+
+    <input
+        type="text"
+        id="beneficioVenta"
+        placeholder="Ejemplo: Se puede personalizar"
+    >
+
+    <br><br>
+
+    <label>¿Qué puedes decirle al cliente?</label>
+    <br>
+
+    <textarea
+        id="mensajeVenta"
+        rows="4"
+        placeholder="Ejemplo: Tenemos tortas personalizadas para tus celebraciones..."
+    ></textarea>
+
+    <br><br>
+
+    <button onclick="crearMensajeVenta()">
+        Crear mensaje de venta
+    </button>
+
+    <div id="resultadoVenta"></div>
+    <br>
+        <a href="ventas.html">
+            <button>← Volver al curso</button>
+        </a>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 4 - Publicidad digital</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Emprende Mujer</h1>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="marketing.html">Cursos</a>
+        <a href="index.html#emprendimiento">Mi emprendimiento</a>
+        <a href="index.html#recursos">Recursos</a>
+    </nav>
+</header>
+
+<section>
+
+    <h2>📢 Lección 4: Publicidad digital</h2>
+
+    <p>
+        La publicidad digital permite mostrar un producto o servicio
+        a personas que podrían estar interesadas en comprarlo.
+    </p>
+
+    <h3>¿Dónde podemos hacer publicidad?</h3>
+
+    <p>
+        Algunas plataformas donde podemos promocionar un emprendimiento son:
+    </p>
+
+    <ul>
+        <li>📱 Instagram</li>
+        <li>📘 Facebook</li>
+        <li>🎵 TikTok</li>
+        <li>💬 WhatsApp</li>
+    </ul>
+
+    <h3>¿Qué debemos tener en cuenta?</h3>
+
+    <p>
+        Antes de crear una publicidad es importante saber qué queremos
+        conseguir y a quién queremos llegar.
+    </p>
+
+    <ul>
+        <li>🎯 Objetivo de la publicidad</li>
+        <li>👥 Público al que queremos llegar</li>
+        <li>💰 Presupuesto disponible</li>
+        <li>📦 Producto o servicio que queremos promocionar</li>
+    </ul>
+
+    <div class="curso">
+
+        <h3>💡 Ejemplo</h3>
+
+        <p>
+            María tiene un emprendimiento de tortas personalizadas.
+            Quiere conseguir nuevos clientes utilizando Instagram.
+        </p>
+
+        <p>
+            Su publicidad podría estar dirigida a personas interesadas
+            en comprar tortas para cumpleaños y celebraciones.
+        </p>
+
+    </div>
+
+    <h3>🎯 Crea una idea de publicidad</h3>
+
+    <label>¿Qué producto o servicio quieres promocionar?</label>
+    <br>
+    <input
+        type="text"
+        id="productoPublicidad"
+        placeholder="Ejemplo: Tortas personalizadas"
+    >
+
+    <br><br>
+
+    <label>¿Cuál es el objetivo de tu publicidad?</label>
+    <br>
+
+    <select id="objetivoPublicidad">
+        <option value="Dar a conocer mi emprendimiento">
+            Dar a conocer mi emprendimiento
+        </option>
+
+        <option value="Conseguir nuevos clientes">
+            Conseguir nuevos clientes
+        </option>
+
+        <option value="Promocionar una oferta">
+            Promocionar una oferta
+        </option>
+    </select>
+
+    <br><br>
+
+    <label>¿A qué público quieres llegar?</label>
+    <br>
+
+    <select id="publicoPublicidad">
+        <option value="Jóvenes">Jóvenes</option>
+        <option value="Adultos">Adultos</option>
+        <option value="Familias">Familias</option>
+        <option value="Personas de mi comunidad">
+            Personas de mi comunidad
+        </option>
+    </select>
+
+    <br><br>
+
+    <label>¿Cuánto presupuesto diario quieres destinar?</label>
+    <br>
+
+    <input
+        type="number"
+        id="presupuestoPublicidad"
+        placeholder="Ejemplo: 10000"
+    >
+
+    <br><br>
+
+    <button onclick="crearPublicidad()">
+        Crear idea de publicidad
+    </button>
+
+    <div id="resultadoPublicidad"></div>
+    <br>
+            <a href="marketing.html">
+            <button>← Volver al curso</button>
+        </a>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

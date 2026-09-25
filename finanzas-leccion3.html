@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lección 3 - Ganancias</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Emprende Mujer</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="index.html#emprendimiento">Mi emprendimiento</a>
+            <a href="index.html#recursos">Recursos</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <h2>📈 Lección 3: Aprende a calcular tus ganancias</h2>
+
+        <p>
+            Saber cuánto dinero gana un emprendimiento es importante
+            para conocer si el negocio está generando beneficios.
+        </p>
+
+        <h3>💡 ¿Qué es una ganancia?</h3>
+
+        <p>
+            La ganancia es el dinero que queda después de restar
+            los costos al dinero obtenido por las ventas.
+        </p>
+
+        <div class="curso">
+
+            <p>
+                Una fórmula sencilla es:
+            </p>
+
+            <p>
+                <strong>
+                    Ganancia = Ingresos - Costos
+                </strong>
+            </p>
+
+            <p>
+                Por ejemplo, si durante un día se obtienen
+                $80.000 en ventas y los costos fueron de $50.000:
+            </p>
+
+            <p>
+                <strong>
+                    $80.000 - $50.000 = $30.000
+                </strong>
+            </p>
+
+            <p>
+                La ganancia sería de <strong>$30.000</strong>.
+            </p>
+
+        </div>
+
+        <h3>🧮 Calcula tu ganancia</h3>
+
+        <label>¿Cuánto dinero recibiste por tus ventas?</label>
+        <br>
+
+        <input type="number" id="ingresos"
+            placeholder="Ejemplo: 80000">
+
+        <br><br>
+
+        <label>¿Cuánto gastaste para producir?</label>
+        <br>
+
+        <input type="number" id="costosGanancia"
+            placeholder="Ejemplo: 50000">
+
+        <br><br>
+
+        <button onclick="calcularGanancia()">
+            Calcular ganancia
+        </button>
+
+        <div id="resultadoGanancia"></div>
+
+        <br>
+
+        <a href="finanzas.html">
+            <button>← Volver al curso</button>
+        </a>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

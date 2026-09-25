@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lección 1 - Conoce tus costos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Emprende Mujer</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="index.html#emprendimiento">Mi emprendimiento</a>
+            <a href="index.html#recursos">Recursos</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <h2>💰 Lección 1: Conoce tus costos</h2>
+
+        <p>
+            Antes de establecer el precio de un producto,
+            es importante saber cuánto dinero cuesta producirlo.
+        </p>
+
+        <h3>📌 ¿Qué es un costo?</h3>
+
+        <p>
+            Un costo es el dinero que debemos utilizar para
+            producir un producto o prestar un servicio.
+        </p>
+
+        <h3>🧾 Ejemplo</h3>
+
+        <div class="curso">
+
+            <p>
+                María prepara una torta para vender.
+            </p>
+
+            <p>
+                Para prepararla necesita:
+            </p>
+
+            <ul>
+                <li>Harina: $8.000</li>
+                <li>Huevos: $6.000</li>
+                <li>Leche: $4.000</li>
+                <li>Decoración: $7.000</li>
+            </ul>
+
+            <p>
+                El costo total de los materiales es:
+            </p>
+
+            <p>
+                <strong>$25.000</strong>
+            </p>
+
+        </div>
+
+<h3>🧮 Calcula tus costos</h3>
+
+<p>
+    Primero indica cuántos productos o materiales quieres
+    registrar.
+</p>
+
+<label>¿Cuántos costos quieres registrar?</label>
+<br>
+
+<input type="number" id="cantidadCostos" min="1"
+    placeholder="Ejemplo: 5">
+
+<br><br>
+
+<button onclick="crearCamposCostos()">
+    Agregar costos
+</button>
+
+<div id="camposCostos"></div>
+
+<br>
+
+<button onclick="calcularCostoTotal()">
+    Calcular costo total
+</button>
+
+<div id="resultadoCostos"></div>
+
+        <br>
+
+        <a href="finanzas.html">
+            <button>← Volver al curso</button>
+        </a>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

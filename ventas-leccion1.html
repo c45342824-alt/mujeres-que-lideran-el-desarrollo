@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 1 - Conoce a tus clientes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Emprende Mujer</h1>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="ventas.html">Cursos</a>
+        <a href="index.html#emprendimiento">Mi emprendimiento</a>
+        <a href="index.html#recursos">Recursos</a>
+    </nav>
+</header>
+
+<section>
+
+    <h2>👥 Lección 1: Conoce a tus clientes</h2>
+
+    <p>
+        Para vender un producto o servicio es importante conocer
+        a las personas que podrían estar interesadas en comprarlo.
+    </p>
+
+    <p>
+        Cuando conocemos a nuestros clientes podemos entender mejor
+        sus necesidades y ofrecer productos que realmente les sean útiles.
+    </p>
+
+    <h3>🔎 ¿Qué podemos conocer de nuestros clientes?</h3>
+
+    <ul>
+        <li>👤 Su edad</li>
+        <li>📍 Dónde viven</li>
+        <li>❤️ Sus intereses</li>
+        <li>💡 Sus necesidades</li>
+        <li>💰 Qué tipo de productos pueden comprar</li>
+    </ul>
+
+    <div class="curso">
+
+        <h3>💡 Ejemplo</h3>
+
+        <p>
+            Laura tiene un emprendimiento de accesorios hechos a mano.
+            Ella descubre que muchas mujeres de su comunidad buscan
+            accesorios económicos para usar diariamente.
+        </p>
+
+        <p>
+            Gracias a esta información, Laura puede crear productos
+            pensando en las necesidades de sus posibles clientes.
+        </p>
+
+    </div>
+
+    <h3>🎯 Crea el perfil de tu cliente</h3>
+
+    <label>¿Qué producto o servicio vendes?</label>
+    <br>
+
+    <input
+        type="text"
+        id="productoClienteVenta"
+        placeholder="Ejemplo: Accesorios hechos a mano"
+    >
+
+    <br><br>
+
+    <label>¿Qué edad tienen tus clientes?</label>
+    <br>
+
+    <select id="edadClienteVenta">
+        <option value="18 a 25 años">18 a 25 años</option>
+        <option value="26 a 35 años">26 a 35 años</option>
+        <option value="36 a 50 años">36 a 50 años</option>
+        <option value="Más de 50 años">Más de 50 años</option>
+        <option value="Todas las opciones">Todas las opciones</option>
+    </select>
+
+    <br><br>
+
+    <label>¿Qué necesitan tus clientes?</label>
+    <br>
+
+    <input
+        type="text"
+        id="necesidadClienteVenta"
+        placeholder="Ejemplo: Accesorios económicos"
+    >
+
+    <br><br>
+
+    <label>¿Qué les interesa?</label>
+    <br>
+
+    <input
+        type="text"
+        id="interesClienteVenta"
+        placeholder="Ejemplo: Moda y accesorios"
+    >
+
+    <br><br>
+
+    <button onclick="crearPerfilClienteVenta()">
+        Crear perfil del cliente
+    </button>
+
+    <div id="resultadoClienteVenta"></div>
+<br>
+        <a href="ventas.html">
+            <button>← Volver al curso</button>
+        </a>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

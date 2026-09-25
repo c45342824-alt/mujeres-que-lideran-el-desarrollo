@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lección 3 - Tu marca</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Emprende Mujer</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="index.html#emprendimiento">Mi emprendimiento</a>
+            <a href="index.html#recursos">Recursos</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <h2>⭐ Lección 3: Construye tu marca</h2>
+
+        <p>
+            Una marca permite que las personas identifiquen y
+            recuerden un emprendimiento. No se trata solamente
+            de un logo, también incluye su nombre, mensaje,
+            personalidad y la forma en que se comunica.
+        </p>
+
+        <h3>💡 Elementos de una marca</h3>
+
+        <ul>
+            <li>🏷️ Nombre del negocio</li>
+            <li>✨ Eslogan</li>
+            <li>🎨 Colores e imágenes</li>
+            <li>💬 Forma de comunicarse con los clientes</li>
+        </ul>
+
+        <h3>📌 Ejemplo</h3>
+
+        <div class="curso">
+
+            <p>
+                <strong>Nombre:</strong> Dulce Encanto
+            </p>
+
+            <p>
+                <strong>Eslogan:</strong>
+                "Un detalle dulce para cada momento"
+            </p>
+
+            <p>
+                Es un emprendimiento de postres que busca
+                transmitir una sensación de alegría y cercanía.
+            </p>
+
+        </div>
+
+        <h3>🎨 Crea tu identidad de marca</h3>
+
+        <label>Nombre de tu emprendimiento:</label>
+        <br>
+
+        <input type="text" id="nombreMarca"
+            placeholder="Ejemplo: Dulce Encanto">
+
+        <br><br>
+
+        <label>Eslogan de tu emprendimiento:</label>
+        <br>
+
+        <input type="text" id="esloganMarca"
+            placeholder="Ejemplo: Un detalle para cada momento">
+
+        <br><br>
+
+        <label>
+            ¿Cómo quieres que se sientan tus clientes?
+        </label>
+        <br>
+
+        <select id="personalidadMarca">
+
+            <option value="">
+                Selecciona una opción
+            </option>
+
+            <option value="Felices y alegres">
+                Felices y alegres
+            </option>
+
+            <option value="Seguros y confiados">
+                Seguros y confiados
+            </option>
+
+            <option value="Cómodos y cercanos">
+                Cómodos y cercanos
+            </option>
+
+            <option value="Sorprendidos y emocionados">
+                Sorprendidos y emocionados
+            </option>
+
+        </select>
+
+        <br><br>
+
+        <button onclick="crearMarca()">
+            Crear mi marca
+        </button>
+
+        <div id="resultadoMarca"></div>
+
+        <br>
+
+        <a href="marketing.html">
+            <button>← Volver al curso</button>
+        </a>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lección 2 - Crear contenido</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Emprende Mujer</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="index.html#emprendimiento">Mi emprendimiento</a>
+            <a href="index.html#recursos">Recursos</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <h2>🎨 Lección 2: Aprende a crear contenido</h2>
+
+        <p>
+            El contenido es una de las principales formas de
+            comunicar lo que ofrece un emprendimiento en internet.
+        </p>
+
+        <h3>📱 ¿Qué es una publicación?</h3>
+
+        <p>
+            Una publicación puede incluir texto, fotografías,
+            videos o imágenes para presentar un producto,
+            compartir información o comunicarse con los clientes.
+        </p>
+
+        <h3>💡 ¿Qué debe tener una buena publicación?</h3>
+
+        <ul>
+            <li>📸 Una imagen o video llamativo</li>
+            <li>📝 Un mensaje claro</li>
+            <li>💰 Información sobre el producto</li>
+            <li>📲 Una forma de contactar al negocio</li>
+        </ul>
+
+        <h3>📌 Ejemplo</h3>
+
+        <div class="curso">
+
+            <p>
+                <strong>Producto:</strong> Tortas personalizadas
+            </p>
+
+            <p>
+                <strong>Publicación:</strong>
+            </p>
+
+            <p>
+                🎂 ¡Haz especial tu celebración!
+                Ofrecemos tortas personalizadas con diferentes
+                sabores y diseños.
+            </p>
+
+            <p>
+                📲 Escríbenos para realizar tu pedido.
+            </p>
+
+        </div>
+
+        <h3>✍️ Crea tu propia publicación</h3>
+
+        <label>Nombre de tu producto o servicio:</label>
+        <br>
+
+        <input type="text" id="nombreProducto"
+            placeholder="Ejemplo: Tortas personalizadas">
+
+        <br><br>
+
+        <label>¿Qué quieres destacar de tu producto?</label>
+        <br>
+
+        <input type="text" id="caracteristicaProducto"
+            placeholder="Ejemplo: diferentes sabores">
+
+        <br><br>
+
+        <label>¿Cómo pueden contactarte?</label>
+        <br>
+
+        <input type="text" id="contacto"
+            placeholder="Ejemplo: WhatsApp 3001234567">
+
+        <br><br>
+
+        <button onclick="crearPublicacion()">
+            Crear mi publicación
+        </button>
+
+        <div id="resultadoPublicacion"></div>
+
+        <br>
+
+        <a href="marketing.html">
+            <button>← Volver al curso</button>
+        </a>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lección 3 - Conoce a tus clientes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Emprende Mujer</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="index.html#emprendimiento">Mi emprendimiento</a>
+            <a href="index.html#recursos">Recursos</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <h2>👩‍💼 Lección 3: Conoce a tus clientes</h2>
+
+        <p>
+            Para que un emprendimiento tenga éxito, es importante
+            conocer a las personas que podrían comprar nuestros
+            productos o servicios.
+        </p>
+
+        <h3>🔎 ¿Quién es tu cliente?</h3>
+
+        <p>
+            Tu cliente es la persona que puede estar interesada
+            en comprar lo que ofrece tu emprendimiento.
+        </p>
+
+        <p>
+            Para conocerlo puedes pensar en aspectos como:
+        </p>
+
+        <ul>
+            <li>Edad</li>
+            <li>Ubicación</li>
+            <li>Necesidades</li>
+            <li>Intereses</li>
+            <li>Qué productos busca</li>
+        </ul>
+
+        <h3>📌 Ejemplo</h3>
+
+        <div class="curso">
+
+            <p>
+                Laura tiene un emprendimiento de postres saludables.
+            </p>
+
+            <p>
+                Su cliente puede ser una persona joven o adulta
+                que vive cerca de su negocio y busca opciones
+                de alimentación más saludable.
+            </p>
+
+        </div>
+
+        <h3>📝 Identifica a tu cliente</h3>
+
+        <p>
+            Ahora crea un perfil del posible cliente de tu
+            emprendimiento.
+        </p>
+
+        <label>Edad aproximada:</label>
+        <br>
+
+        <select id="edad">
+            <option value="">Selecciona una opción</option>
+            <option>18 a 25 años</option>
+            <option>26 a 35 años</option>
+            <option>36 a 50 años</option>
+            <option>Más de 50 años</option>
+            <option>Todas las anteriores</option>
+        </select>
+
+        <br><br>
+
+        <label>¿Dónde se encuentra?</label>
+        <br>
+
+        <input type="text" id="ubicacion"
+            placeholder="Ejemplo: Mi barrio, Cali">
+
+        <br><br>
+
+        <label>¿Qué necesita?</label>
+        <br>
+
+        <input type="text" id="necesidadCliente"
+            placeholder="Escribe la necesidad">
+
+        <br><br>
+
+        <label>¿Qué le interesa?</label>
+        <br>
+
+        <input type="text" id="interes"
+            placeholder="Ejemplo: productos económicos">
+
+        <br><br>
+
+        <button onclick="crearCliente()">Crear perfil de cliente</button>
+
+        <div id="perfilCliente"></div>
+
+        <br>
+
+        <a href="emprendimiento.html">
+            <button>← Volver al curso</button>
+        </a>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

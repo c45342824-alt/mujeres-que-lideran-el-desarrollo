@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lección 2 - Precio de venta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Emprende Mujer</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="index.html#emprendimiento">Mi emprendimiento</a>
+            <a href="index.html#recursos">Recursos</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <h2>💵 Lección 2: ¿Cómo establecer el precio de venta?</h2>
+
+        <p>
+            El precio de venta es el dinero que cobraremos al cliente
+            por nuestro producto o servicio.
+        </p>
+
+        <p>
+            Para establecer un precio adecuado debemos conocer primero
+            cuánto nos cuesta producir el producto y cuánto queremos
+            ganar.
+        </p>
+
+        <h3>🧮 Una forma sencilla de calcularlo</h3>
+
+        <div class="curso">
+
+            <p>
+                Una fórmula sencilla para comenzar es:
+            </p>
+
+            <p>
+                <strong>
+                    Precio de venta = Costo + Ganancia
+                </strong>
+            </p>
+
+            <p>
+                Por ejemplo, si producir una torta cuesta $25.000 y
+                queremos ganar $10.000:
+            </p>
+
+            <p>
+                <strong>
+                    $25.000 + $10.000 = $35.000
+                </strong>
+            </p>
+
+            <p>
+                Por lo tanto, podríamos establecer un precio de venta
+                de $35.000.
+            </p>
+
+        </div>
+
+        <h3>💰 Calcula tu precio de venta</h3>
+
+        <label>¿Cuánto cuesta producir tu producto?</label>
+        <br>
+
+        <input type="number" id="costoProducto"
+            placeholder="Ejemplo: 25000">
+
+        <br><br>
+
+        <label>¿Cuánto quieres ganar?</label>
+        <br>
+
+        <input type="number" id="gananciaDeseada"
+            placeholder="Ejemplo: 10000">
+
+        <br><br>
+
+        <button onclick="calcularPrecioVenta()">
+            Calcular precio de venta
+        </button>
+
+        <div id="resultadoPrecio"></div>
+
+        <br>
+
+        <a href="finanzas.html">
+            <button>← Volver al curso</button>
+        </a>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

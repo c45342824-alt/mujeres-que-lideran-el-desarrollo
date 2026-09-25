@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lección 4 - Organización financiera</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Emprende Mujer</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#cursos">Cursos</a>
+            <a href="index.html#emprendimiento">Mi emprendimiento</a>
+            <a href="index.html#recursos">Recursos</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <h2>📊 Lección 4: Organización financiera</h2>
+
+        <p>
+            Llevar un registro de los movimientos de dinero ayuda
+            a conocer mejor el estado de nuestro emprendimiento
+            y tomar mejores decisiones.
+        </p>
+
+        <h3>💰 ¿Qué debemos registrar?</h3>
+
+        <p>
+            Es recomendable registrar el dinero que entra y el
+            dinero que sale del negocio.
+        </p>
+
+        <ul>
+            <li>💵 Ventas realizadas</li>
+            <li>📦 Compra de materiales</li>
+            <li>🚚 Gastos de transporte</li>
+            <li>📱 Gastos relacionados con el negocio</li>
+            <li>📈 Ganancias obtenidas</li>
+        </ul>
+
+        <h3>📌 Ejemplo</h3>
+
+        <div class="curso">
+
+            <p>
+                Durante una semana, Ana registra sus movimientos:
+            </p>
+
+            <ul>
+                <li>Ventas: $200.000</li>
+                <li>Materiales: $90.000</li>
+                <li>Transporte: $20.000</li>
+            </ul>
+
+            <p>
+                De esta manera puede conocer cuánto dinero entró
+                y cuánto dinero salió de su negocio.
+            </p>
+
+        </div>
+
+        <h3>📝 Organiza tus movimientos</h3>
+
+        <p>
+            Registra un ingreso o gasto de tu emprendimiento.
+        </p>
+
+        <label>Descripción:</label>
+        <br>
+
+        <input type="text" id="descripcionMovimiento"
+            placeholder="Ejemplo: Venta de 3 tortas">
+
+        <br><br>
+
+        <label>Tipo de movimiento:</label>
+        <br>
+
+        <select id="tipoMovimiento">
+
+            <option value="">
+                Selecciona una opción
+            </option>
+
+            <option value="Ingreso">
+                Ingreso
+            </option>
+
+            <option value="Gasto">
+                Gasto
+            </option>
+
+        </select>
+
+        <br><br>
+
+        <label>Valor:</label>
+        <br>
+
+        <input type="number" id="valorMovimiento"
+            placeholder="Ejemplo: 50000">
+
+        <br><br>
+
+        <button onclick="registrarMovimiento()">
+            Registrar movimiento
+        </button>
+
+        <div id="resultadoMovimiento"></div>
+
+        <br>
+
+        <a href="finanzas.html">
+            <button>← Volver al curso</button>
+        </a>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
