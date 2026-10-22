@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 4 - Fidelización de clientes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header class="encabezado-cursos">
+    <h1>Mujeres que lideran el desarrollo</h1>
+
+    <nav>
+        <a href="mi-emprendimiento.html">Tu espacio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="ideadenegocio.html"> Mi idea de negocio</a>
+        <a href="visibilidad-comunal.html">visibilidad Comunal</a>
+        <a href="red-apoyo.html">Red de Apoyo</a>
+    </nav>
+</header>
+
+<section>
+
+    <h2>🌟 Lección 4: Fidelización de clientes</h2>
+
+    <p>
+        La fidelización consiste en conseguir que los clientes
+        se sientan satisfechos y quieran volver a comprar nuestros
+        productos o servicios.
+    </p>
+
+    <h3>💜 ¿Cómo podemos fidelizar a nuestros clientes?</h3>
+
+    <ul>
+        <li>😊 Ofrecer una atención amable y respetuosa.</li>
+        <li>⭐ Mantener una buena calidad en los productos.</li>
+        <li>🎁 Ofrecer promociones o beneficios a los clientes frecuentes.</li>
+        <li>💬 Preguntar si quedaron satisfechos con su compra.</li>
+        <li>🤝 Cumplir las promesas y los tiempos de entrega.</li>
+    </ul>
+
+    <div class="curso">
+
+        <h3>💡 Ejemplo</h3>
+
+        <p>
+            Diana tiene un emprendimiento de jabones artesanales.
+            Una clienta compra sus productos y queda satisfecha.
+            Diana le agradece la compra y le informa cuando tiene
+            nuevos aromas disponibles.
+        </p>
+
+        <p>
+            La clienta se siente bien atendida y puede decidir
+            volver a comprar cuando necesite más jabones.
+        </p>
+
+    </div>
+
+    <h3>🎯 Actividad: ¿Cómo fidelizarías a tus clientes?</h3>
+
+    <p>
+        Imagina que una clienta ya compró uno de tus productos
+        y quedó satisfecha. Selecciona la mejor opción.
+    </p>
+
+    <div class="curso">
+
+        <label>
+            <input type="radio" name="fidelizacion" value="a">
+            A. No volver a comunicarme con ella.
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="radio" name="fidelizacion" value="b">
+            B. Agradecer su compra y ofrecerle una buena atención
+            cuando vuelva a necesitar el producto.
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="radio" name="fidelizacion" value="c">
+            C. Insistirle todos los días para que compre nuevamente.
+        </label>
+
+        <br><br>
+
+        <button onclick="evaluarFidelizacion()">
+            Comprobar respuesta
+        </button>
+
+        <div id="resultadoFidelizacion"></div>
+
+    </div>
+
+    <h3>✍️ Diseña una estrategia de fidelización</h3>
+
+    <p>
+        Ahora piensa en tu emprendimiento y escribe qué harías
+        para que tus clientes quieran volver.
+    </p>
+
+    <label>¿Qué producto o servicio vendes?</label>
+    <br>
+
+    <input
+        type="text"
+        id="productoFidelizacion"
+        placeholder="Ejemplo: Jabones artesanales"
+    >
+
+    <br><br>
+
+    <label>¿Qué beneficio ofrecerías a tus clientes frecuentes?</label>
+    <br>
+
+    <select id="beneficioFidelizacion">
+        <option value="Un descuento en la próxima compra">
+            Un descuento en la próxima compra
+        </option>
+
+        <option value="Una promoción especial">
+            Una promoción especial
+        </option>
+
+        <option value="Un pequeño obsequio">
+            Un pequeño obsequio
+        </option>
+
+        <option value="Atención personalizada">
+            Atención personalizada
+        </option>
+    </select>
+
+    <br><br>
+
+    <label>¿Cómo agradecerías a tus clientes?</label>
+    <br>
+
+    <textarea
+        id="agradecimientoFidelizacion"
+        rows="4"
+        placeholder="Ejemplo: Gracias por confiar en mi emprendimiento..."
+    ></textarea>
+
+    <br><br>
+
+    <button onclick="crearEstrategiaFidelizacion()">
+        Crear mi estrategia
+    </button>
+
+    <div id="resultadoEstrategiaFidelizacion"></div>
+    <div class="clase-profesor">
+
+    <h3>👩‍🏫 Conectarme con el profesor</h3>
+
+    <p>
+        ¿Tienes dudas sobre esta lección?
+        Participa en una clase virtual con tu profesor
+        para aprender y compartir tus experiencias.
+    </p>
+
+    <a
+        href="https://meet.google.com/pxr-woeb-vkk"
+        class="boton-clase"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        🎥 Unirme a la clase virtual
+    </a>
+
+</div>
+    <br>
+    <div class="volver-curso">
+        <a href="ventas.html">
+            <button>← Volver al curso</button>
+        </a>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

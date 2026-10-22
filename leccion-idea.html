@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 1 - Descubre tu idea de negocio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header class="encabezado-cursos">
+    <h1>Mujeres que lideran el desarrollo</h1>
+
+    <nav>
+        <a href="mi-emprendimiento.html">Tu espacio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="ideadenegocio.html">Mi idea de negocio</a>
+        <a href="visibilidad-comunal.html">Visibilidad Comunal</a>
+        <a href="red-apoyo.html">Red de Apoyo</a>
+    </nav>
+</header>
+
+<section>
+
+    <h2>💡 Lección 1: Descubre tu idea de negocio</h2>
+
+    <p>
+        Todo emprendimiento comienza con una idea.
+        No siempre es necesario tener mucho dinero para empezar.
+        En ocasiones, una habilidad que ya tenemos, algo que nos
+        gusta hacer o una necesidad de nuestra comunidad puede
+        convertirse en una oportunidad para emprender.
+    </p>
+
+    <h3>📌 ¿Qué es una idea de negocio?</h3>
+
+    <p>
+        Una idea de negocio es una propuesta para ofrecer un
+        producto o servicio que responda a una necesidad,
+        resuelva un problema o satisfaga un deseo de las personas.
+    </p>
+
+    <p>
+        Por ejemplo, una mujer que sabe preparar postres puede
+        identificar que en su comunidad hay personas que buscan
+        tortas para cumpleaños. A partir de esa habilidad, puede
+        desarrollar un emprendimiento de repostería.
+    </p>
+
+    <h3>🌱 ¿De dónde pueden surgir las ideas?</h3>
+
+    <div class="curso">
+
+        <h3>1. De tus habilidades</h3>
+
+        <p>
+            Piensa en las cosas que sabes hacer. Puedes tener
+            habilidades para cocinar, coser, pintar, cuidar niños,
+            elaborar manualidades, peinar o enseñar.
+        </p>
+
+        <p>
+            <strong>Ejemplo:</strong> si sabes elaborar accesorios
+            a mano, puedes ofrecerlos a personas que buscan
+            productos personalizados.
+        </p>
+
+        <h3>2. De tus intereses y pasiones</h3>
+
+        <p>
+            Las actividades que disfrutas pueden ayudarte a
+            encontrar una idea. Sin embargo, también debes
+            investigar si hay personas interesadas en pagar
+            por ese producto o servicio.
+        </p>
+
+        <p>
+            <strong>Ejemplo:</strong> si te gusta la decoración,
+            podrías explorar la elaboración de arreglos para
+            celebraciones.
+        </p>
+
+        <h3>3. De las necesidades de tu comunidad</h3>
+
+        <p>
+            Observa qué dificultades tienen las personas de tu
+            entorno y qué productos o servicios les hacen falta.
+        </p>
+
+        <p>
+            <strong>Ejemplo:</strong> si varias personas necesitan
+            almuerzos caseros cerca de sus lugares de trabajo,
+            podrías investigar la posibilidad de ofrecer ese servicio.
+        </p>
+
+    </div>
+
+    <h3>👩‍🍳 Ejemplo práctico</h3>
+
+    <div class="curso">
+
+        <p>
+            Maria disfruta preparar postres y sus vecinas
+            suelen preguntarle si vende tortas para cumpleaños.
+            Ella identifica una posible oportunidad.
+        </p>
+
+        <p><strong>Su habilidad:</strong> preparar postres.</p>
+
+        <p><strong>Su posible producto:</strong> tortas personalizadas.</p>
+
+        <p>
+            <strong>La necesidad que identifica:</strong>
+            encontrar tortas caseras para celebraciones.
+        </p>
+
+        <p>
+            Antes de invertir dinero, Maria puede consultar
+            a posibles clientes, conocer sus gustos y calcular
+            cuánto le costaría preparar cada torta.
+        </p>
+
+        <p>
+            Este ejemplo muestra que una idea es un punto de partida.
+            Para convertirla en un negocio, también es necesario
+            investigar, planificar y conocer los costos.
+        </p>
+
+    </div>
+
+    <h3>✍️ Actividad práctica: construye tu primera idea</h3>
+
+    <p>
+        Ahora es tu turno. Responde las siguientes preguntas
+        pensando en tus habilidades y en las oportunidades
+        que encuentras en tu comunidad.
+    </p>
+
+    <label for="habilidad">
+        <strong>1. ¿Qué sabes hacer o qué habilidad tienes?</strong>
+    </label>
+    <br>
+    <input
+        type="text"
+        id="habilidad"
+        placeholder="Ejemplo: cocinar, coser, pintar..."
+    >
+
+    <br><br>
+
+    <label for="producto">
+        <strong>2. ¿Qué producto o servicio podrías ofrecer?</strong>
+    </label>
+    <br>
+    <input
+        type="text"
+        id="producto"
+        placeholder="Ejemplo: vender postres caseros"
+    >
+
+    <br><br>
+
+    <label for="necesidad">
+        <strong>3. ¿Qué necesidad solucionarías?</strong>
+    </label>
+    <br>
+    <textarea
+        id="necesidad"
+        rows="4"
+        placeholder="Describe qué necesitan las personas y cómo podrías ayudarlas."
+    ></textarea>
+
+    <br><br>
+
+    <button type="button" onclick="crearIdea()">
+        🌟 Generar mi idea de negocio
+    </button>
+
+    <div id="miIdea" class="curso"></div>
+
+    <h3>📝 Reflexiona sobre tu idea</h3>
+
+    <div class="curso">
+
+        <p>
+            Antes de continuar, recuerda que una buena idea
+            debe relacionarse con una necesidad real y tener
+            posibles clientes interesados.
+        </p>
+
+        <ul>
+            <li>¿Disfrutarías desarrollar esta idea?</li>
+            <li>¿Qué necesitarías para comenzar?</li>
+            <li>¿A quién podrías preguntarle si compraría tu producto?</li>
+        </ul>
+
+        <p>
+            No necesitas tener todas las respuestas desde el principio.
+            Lo importante es comenzar a investigar y aprender.
+        </p>
+
+    </div>
+
+    <div class="clase-profesor">
+
+        <h3>👩‍🏫 Conectarme con el profesor</h3>
+
+        <p>
+            ¿Tienes dudas sobre cómo identificar tu idea de negocio?
+            Participa en una clase virtual para compartir tus ideas
+            y aprender con orientación del profesor.
+        </p>
+
+        <a
+            href="https://meet.google.com/pxr-woeb-vkk"
+            class="boton-clase"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            🎥 Unirme a la clase virtual
+        </a>
+
+    </div>
+
+    <br>
+
+    <a href="ideadenegocio.html">
+        <button type="button">← Volver a las lecciones</button>
+    </a>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -329,5 +329,238 @@ function crearMensajeVenta() {
         "</div>";
 }
 
+function evaluarAtencionCliente() {
 
+    let respuesta = document.querySelector(
+        'input[name="situacionCliente"]:checked'
+    );
+
+    let resultado = document.getElementById("resultadoAtencion");
+
+    if (respuesta === null) {
+        resultado.innerHTML =
+            "<p>⚠️ Selecciona una respuesta antes de continuar.</p>";
+    } else if (respuesta.value === "b") {
+        resultado.innerHTML =
+            "<p>🎉 ¡Correcto! Informar con amabilidad y resolver dudas " +
+            "ayuda a generar confianza en el cliente.</p>";
+    } else {
+        resultado.innerHTML =
+            "<p>❌ Inténtalo nuevamente. Recuerda que debemos " +
+            "tratar al cliente con respeto y responder sus preguntas.</p>";
+    }
+}
+
+function crearRespuestaCliente() {
+
+    let respuesta =
+        document.getElementById("respuestaCliente").value.trim();
+
+    if (respuesta === "") {
+        document.getElementById("respuestaCreada").innerHTML =
+            "<p>⚠️ Escribe una respuesta para tu cliente.</p>";
+    } else {
+        document.getElementById("respuestaCreada").innerHTML =
+            "<h3>💌 Mi respuesta para el cliente</h3>" +
+            "<div class='curso'><p></p></div>";
+
+        document.querySelector(
+            "#respuestaCreada .curso p"
+        ).textContent = respuesta;
+    }
+}
+function evaluarFidelizacion() {
+
+    let respuesta = document.querySelector(
+        'input[name="fidelizacion"]:checked'
+    );
+
+    let resultado = document.getElementById(
+        "resultadoFidelizacion"
+    );
+
+    if (respuesta === null) {
+
+        resultado.innerHTML =
+            "<p>⚠️ Selecciona una respuesta.</p>";
+
+    } else if (respuesta.value === "b") {
+
+        resultado.innerHTML =
+            "<p>🎉 ¡Correcto! Agradecer la compra y ofrecer " +
+            "una buena atención ayuda a crear relaciones " +
+            "duraderas con los clientes.</p>";
+
+    } else {
+
+        resultado.innerHTML =
+            "<p>❌ Inténtalo nuevamente. Recuerda que " +
+            "fidelizar significa generar confianza y satisfacción, " +
+            "sin presionar al cliente.</p>";
+
+    }
+}
+
+
+function crearEstrategiaFidelizacion() {
+
+    let producto = document.getElementById(
+        "productoFidelizacion"
+    ).value.trim();
+
+    let beneficio = document.getElementById(
+        "beneficioFidelizacion"
+    ).value;
+
+    let agradecimiento = document.getElementById(
+        "agradecimientoFidelizacion"
+    ).value.trim();
+
+    let resultado = document.getElementById(
+        "resultadoEstrategiaFidelizacion"
+    );
+
+    if (producto === "" || agradecimiento === "") {
+
+        resultado.innerHTML =
+            "<p>⚠️ Completa el producto y el mensaje " +
+            "de agradecimiento.</p>";
+
+        return;
+    }
+
+    resultado.innerHTML =
+        "<h3>🌟 Mi estrategia de fidelización</h3>" +
+        "<div class='curso'>" +
+        "<p><strong>Mi producto:</strong> " +
+        producto + "</p>" +
+        "<p><strong>Beneficio para clientes frecuentes:</strong> " +
+        beneficio + "</p>" +
+        "<p><strong>Mi agradecimiento:</strong></p>" +
+        "<p id='mensajeAgradecimiento'></p>" +
+        "</div>";
+
+    document.getElementById(
+        "mensajeAgradecimiento"
+    ).textContent = agradecimiento;
+}
+
+function validarIdea() {
+    const producto = document.getElementById("productoValidacion").value.trim();
+    const cliente = document.getElementById("clienteValidacion").value.trim();
+    const necesidad = document.getElementById("necesidadValidacion").value.trim();
+    const prueba = document.getElementById("pruebaValidacion").value.trim();
+    const mejora = document.getElementById("mejoraValidacion").value;
+
+    const resultado = document.getElementById("resultadoValidacion");
+
+    if (!producto || !cliente || !necesidad || !prueba || !mejora) {
+        resultado.innerHTML = "<p>Completa todos los campos para crear tu plan.</p>";
+        return;
+    }
+
+    resultado.innerHTML = `
+        <h3>Mi plan para validar mi idea</h3>
+
+        <p><strong>Mi producto o servicio:</strong> ${escaparTextoValidacion(producto)}</p>
+
+        <p><strong>Mis posibles clientes:</strong> ${escaparTextoValidacion(cliente)}</p>
+
+        <p><strong>La necesidad que quiero atender:</strong> ${escaparTextoValidacion(necesidad)}</p>
+
+        <p><strong>Cómo voy a comprobar mi idea:</strong> ${escaparTextoValidacion(prueba)}</p>
+
+        <p><strong>Aspecto que voy a evaluar:</strong> ${escaparTextoValidacion(mejora)}</p>
+
+        <h3>Mi siguiente paso</h3>
+
+        <p>
+            Voy a conversar con posibles clientes, escuchar sus opiniones y realizar
+            una prueba pequeña antes de invertir una cantidad importante de dinero.
+        </p>
+
+        <p>
+            <strong>¡Muy bien!</strong> Ya tienes un primer plan para investigar
+            tu idea de negocio.
+        </p>
+    `;
+}
+
+function escaparTextoValidacion(texto) {
+    return texto.replace(/[&<>"']/g, function(caracter) {
+        const caracteres = {
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&#39;"
+        };
+
+        return caracteres[caracter];
+    });
+}
+
+function crearModeloNegocio() {
+    const nombre = document.getElementById("nombreModelo").value.trim();
+    const cliente = document.getElementById("clienteModelo").value.trim();
+    const propuesta = document.getElementById("propuestaModelo").value.trim();
+    const recursos = document.getElementById("recursosModelo").value.trim();
+    const canal = document.getElementById("canalModelo").value;
+    const ingresos = document.getElementById("ingresosModelo").value.trim();
+    const costos = document.getElementById("costosModelo").value.trim();
+
+    const resultado = document.getElementById("resultadoModelo");
+
+    if (!nombre || !cliente || !propuesta || !recursos ||
+        !canal || !ingresos || !costos) {
+        resultado.textContent =
+            "Completa todos los campos para generar tu modelo de negocio.";
+        return;
+    }
+
+    resultado.innerHTML = `
+        <h3>📋 Mi modelo de negocio</h3>
+
+        <p><strong>Nombre del emprendimiento:</strong>
+        ${escaparTextoModelo(nombre)}</p>
+
+        <p><strong>Mis clientes:</strong>
+        ${escaparTextoModelo(cliente)}</p>
+
+        <p><strong>Mi propuesta de valor:</strong>
+        ${escaparTextoModelo(propuesta)}</p>
+
+        <p><strong>Mis recursos:</strong>
+        ${escaparTextoModelo(recursos)}</p>
+
+        <p><strong>Mis canales de venta:</strong>
+        ${escaparTextoModelo(canal)}</p>
+
+        <p><strong>Mis fuentes de ingresos:</strong>
+        ${escaparTextoModelo(ingresos)}</p>
+
+        <p><strong>Mis principales costos:</strong>
+        ${escaparTextoModelo(costos)}</p>
+
+        <h3>🌱 Mi siguiente paso</h3>
+
+        <p>
+            Revisaré los recursos, los costos y las necesidades
+            de mis clientes para organizar mejor mi emprendimiento
+            y preparar mis próximos pasos.
+        </p>
+    `;
+}
+
+function escaparTextoModelo(texto) {
+    const caracteres = {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+    };
+
+    return texto.replace(/[&<>"']/g, caracter => caracteres[caracter]);
+}
 
