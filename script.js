@@ -1,23 +1,28 @@
+console.log("¡EL ARCHIVO SCRIPT.JS ESTÁ CARGANDO!");
 const formularioLogin = document.getElementById("formulario-login");
 
-formularioLogin.addEventListener("submit", function(event) {
+if (formularioLogin !== null) {
 
-    event.preventDefault();
+    formularioLogin.addEventListener("submit", function(event) {
 
-    let correo = document.getElementById("correo").value;
-    let contrasena = document.getElementById("contrasena").value;
+        event.preventDefault();
 
-    if (correo === "madreemprendedora@gmail.com" && contrasena === "123456") {
+        let correo = document.getElementById("correo").value;
+        let contrasena = document.getElementById("contrasena").value;
 
-        window.location.href = "mi-emprendimiento.html";
+        if (correo === "madreemprendedora@gmail.com" && contrasena === "123456") {
 
-    } else {
+            window.location.href = "mi-emprendimiento.html";
 
-        alert("❌ El correo o la contraseña son incorrectos.");
+        } else {
 
-    }
+            alert("❌ El correo o la contraseña son incorrectos.");
 
-});
+        }
+
+    });
+
+}
 function respuestaCorrecta() {
     document.getElementById("resultado").innerHTML =
         "¡Correcto! 🎉 Un emprendimiento busca ofrecer una solución o generar valor a partir de una idea.";
@@ -564,3 +569,173 @@ function escaparTextoModelo(texto) {
     return texto.replace(/[&<>"']/g, caracter => caracteres[caracter]);
 }
 
+
+function iniciarRedApoyo() {
+
+    const formulario = document.getElementById("form-publicacion");
+    const muro = document.getElementById("muro-publicaciones");
+
+    // Verificar que estamos en la página Red de Apoyo
+    if (!formulario || !muro) {
+        return;
+    }
+
+    const nombreInput = document.getElementById("nombre-publicacion");
+    const mensajeInput = document.getElementById("mensaje-publicacion");
+    const validacion = document.getElementById("mensaje-validacion");
+    const contador = document.getElementById("contador-publicaciones");
+
+    // Actualizar cantidad de publicaciones
+    function actualizarContador() {
+
+        const cantidad = muro.querySelectorAll(".red-publicacion").length;
+
+        if (contador) {
+            contador.textContent =
+                " " + cantidad + " publicaciones compartidas";
+        }
+    }
+
+    actualizarContador();
+
+
+    // =====================================
+    // PUBLICAR MENSAJES
+    // =====================================
+
+    formulario.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const nombre = nombreInput.value.trim();
+        const mensaje = mensajeInput.value.trim();
+
+        // Validar campos vacíos
+        if (nombre === "" || mensaje === "") {
+
+            if (validacion) {
+
+                if (nombre === "" && mensaje === "") {
+                    validacion.textContent =
+                        "Por favor, escribe tu nombre y tu mensaje.";
+                } else if (nombre === "") {
+                    validacion.textContent =
+                        "Por favor, escribe tu nombre.";
+                } else {
+                    validacion.textContent =
+                        "Por favor, escribe lo que quieres compartir.";
+                }
+
+            }
+
+            return;
+        }
+
+        // Crear publicación
+        const publicacion = document.createElement("article");
+
+        publicacion.className = "red-publicacion";
+
+        // Crear encabezado
+        const cabecera = document.createElement("div");
+        cabecera.className = "red-publicacion-cabecera";
+
+        const avatar = document.createElement("div");
+        avatar.className = "red-avatar";
+        avatar.textContent = nombre.charAt(0).toUpperCase();
+
+        const datos = document.createElement("div");
+
+        const titulo = document.createElement("h4");
+        titulo.textContent = nombre;
+
+        const categoria = document.createElement("span");
+        categoria.textContent = "Emprendedora";
+
+        datos.appendChild(titulo);
+        datos.appendChild(categoria);
+
+        cabecera.appendChild(avatar);
+        cabecera.appendChild(datos);
+
+        // Crear mensaje
+        const texto = document.createElement("p");
+        texto.className = "red-mensaje";
+        texto.textContent = mensaje;
+
+        // Crear pie de publicación
+        const pie = document.createElement("div");
+        pie.className = "red-publicacion-pie";
+
+        const agradecimiento = document.createElement("span");
+        agradecimiento.textContent =
+            "Gracias por compartir tu experiencia ❤️";
+
+        const botonMeGusta = document.createElement("button");
+        botonMeGusta.type = "button";
+        botonMeGusta.className = "red-boton-apoyo";
+        botonMeGusta.textContent = "♡ Me gusta";
+
+        pie.appendChild(agradecimiento);
+        pie.appendChild(botonMeGusta);
+
+        // Unir todos los elementos
+        publicacion.appendChild(cabecera);
+        publicacion.appendChild(texto);
+        publicacion.appendChild(pie);
+
+        // Agregar al principio del muro
+        muro.prepend(publicacion);
+
+        // Limpiar formulario
+        formulario.reset();
+
+        if (validacion) {
+            validacion.textContent =
+                "¡Tu publicación se compartió correctamente! ❤️";
+        }
+
+        // Actualizar contador
+        actualizarContador();
+
+    });
+
+
+    // =====================================
+    // BOTÓN ME GUSTA
+    // =====================================
+
+    muro.addEventListener("click", function(event) {
+
+        const boton = event.target.closest(".red-boton-apoyo");
+
+        if (!boton || !muro.contains(boton)) {
+            return;
+        }
+
+        if (boton.textContent.includes("♡")) {
+
+            boton.textContent = "❤️ Me gusta";
+            boton.setAttribute("aria-pressed", "true");
+
+        } else {
+
+            boton.textContent = "♡ Me gusta";
+            boton.setAttribute("aria-pressed", "false");
+
+        }
+
+    });
+
+}
+
+
+// =====================================
+// INICIAR RED DE APOYO
+// =====================================
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    iniciarRedApoyo();
+
+});

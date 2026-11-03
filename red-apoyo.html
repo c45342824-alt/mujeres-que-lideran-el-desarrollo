@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Red de Apoyo - Mujeres que Lideran el Desarrollo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="encabezado-cursos">
+
+        <h1>Mujeres que Lideran el Desarrollo</h1>
+
+        <nav>
+            <a href="mi-emprendimiento.html">Tu espacio</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="ideadenegocio.html">Mi idea de negocio</a>
+            <a href="visibilidad-comunal.html">Visibilidad Comunal</a>
+            <a href="red-apoyo.html" class="activo">Red de Apoyo</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main class="red-contenedor">
+
+        <!-- PRESENTACIÓN -->
+
+        <section class="red-presentacion">
+
+            <span class="red-etiqueta">NUESTRA COMUNIDAD</span>
+
+            <h2>Red de Apoyo</h2>
+
+            <p>
+                Emprender es un camino que se hace más bonito cuando
+                tenemos con quién compartirlo. Este espacio está pensado
+                para que podamos conversar, contar nuestras experiencias,
+                compartir nuestros logros y apoyarnos en los momentos difíciles.
+            </p>
+
+            <p class="red-frase">
+                "Cuando una mujer apoya a otra, todas tenemos
+                más oportunidades de crecer".
+            </p>
+
+        </section>
+
+
+        <!-- FORMULARIO PARA PUBLICAR -->
+
+        <section class="red-formulario">
+
+            <div class="red-titulo-seccion">
+
+                <h3>¡Queremos escucharte!</h3>
+
+                <p>
+                    Comparte tus experiencias, ideas, logros o preguntas
+                    con las demás mujeres.
+                </p>
+
+            </div>
+
+
+            <form id="form-publicacion">
+
+                <div class="red-campo">
+
+                    <label for="nombre-publicacion">
+                        ¿Cómo te llamas?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre-publicacion"
+                        placeholder="Escribe tu nombre"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="red-campo">
+
+                    <label for="mensaje-publicacion">
+                        ¿Qué quieres compartir hoy?
+                    </label>
+
+                    <textarea
+                        id="mensaje-publicacion"
+                        rows="5"
+                        placeholder="Cuéntanos tu experiencia, comparte una idea o haz una pregunta..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" class="red-boton-publicar">
+                    Compartir con la comunidad
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- MURO DE PUBLICACIONES -->
+
+        <section class="red-muro">
+
+            <div class="red-titulo-seccion">
+
+                <h3>Lo que compartimos entre nosotras</h3>
+
+                <p>
+                    Conoce las experiencias de otras emprendedoras.
+                    Todas tenemos algo que enseñar y algo que aprender.
+                </p>
+
+            </div>
+
+
+            <div id="muro-publicaciones">
+
+
+                <!-- PUBLICACIÓN DE EJEMPLO 1 -->
+
+                <article class="red-publicacion">
+
+                    <div class="red-publicacion-cabecera">
+
+                        <div class="red-avatar">M</div>
+
+                        <div>
+                            <h4>María</h4>
+                            <span>Emprendedora</span>
+                        </div>
+
+                    </div>
+
+                    <p class="red-mensaje">
+                        Hace unos meses comencé a vender postres desde
+                        mi casa. Al principio tenía mucho miedo porque
+                        no sabía si iba a conseguir clientes, pero
+                        decidí intentarlo. Hoy estoy muy feliz porque
+                        cada vez más personas conocen mis productos.
+                        ¡No debemos tener miedo de comenzar!
+                    </p>
+
+                    <div class="red-publicacion-pie">
+
+                        <span>Una experiencia para inspirarnos ❤️</span>
+
+                        <button type="button" class="red-boton-apoyo">
+                            ♡ Me gusta
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PUBLICACIÓN DE EJEMPLO 2 -->
+
+                <article class="red-publicacion">
+
+                    <div class="red-publicacion-cabecera">
+
+                        <div class="red-avatar red-avatar-rosa">L</div>
+
+                        <div>
+                            <h4>Laura</h4>
+                            <span>Emprendedora</span>
+                        </div>
+
+                    </div>
+
+                    <p class="red-mensaje">
+                        Quiero compartir algo que he aprendido durante
+                        mi emprendimiento: debemos tener paciencia.
+                        No todos los días las ventas son buenas, pero
+                        eso no significa que debamos rendirnos.
+                        Cada día es una nueva oportunidad para aprender
+                        y mejorar.
+                    </p>
+
+                    <div class="red-publicacion-pie">
+
+                        <span>Compartir también es aprender 🌷</span>
+
+                        <button type="button" class="red-boton-apoyo">
+                            ♡ Me gusta
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- MENSAJE FINAL -->
+
+        <section class="red-mensaje-final">
+
+            <h3>¡No estás sola en este camino!</h3>
+
+            <p>
+                Detrás de cada emprendimiento hay una mujer con sueños,
+                esfuerzos e historias que merecen ser escuchadas.
+                Sigamos construyendo juntas una comunidad donde
+                podamos aprender, compartir y apoyarnos.
+            </p>
+
+        </section>
+
+    </main>
+<script src="./script.js" defer></script>
+
+</body>
+</html>
