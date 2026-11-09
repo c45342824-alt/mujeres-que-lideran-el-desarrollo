@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificado de Finalización</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="pagina-certificado">
+
+    <main class="contenedor-certificado">
+
+        <div class="certificado">
+
+            <div class="marco-certificado">
+
+                <p class="nombre-proyecto">
+                    Mujeres que Lideran el Desarrollo
+                </p>
+
+                <div class="decoracion-certificado">✿</div>
+
+                <h1>Certificado</h1>
+
+                <h2>de Finalización</h2>
+
+                <p class="texto-reconocimiento">
+                    Se otorga el presente reconocimiento a:
+                </p>
+
+                <h3 class="nombre-participante">
+                    María Fernanda López
+                </h3>
+
+                <div class="linea-nombre"></div>
+
+                <p class="texto-finalizacion">
+                    Por haber completado satisfactoriamente las lecciones
+                    de formación del programa <strong>Mujeres que Lideran el Desarrollo</strong>,
+                    demostrando compromiso, dedicación y entusiasmo por
+                    fortalecer sus conocimientos y desarrollar sus ideas
+                    de emprendimiento.
+                </p>
+
+                <p class="mensaje-final">
+                    ¡Felicitaciones por este logro!
+                </p>
+
+                <div class="fecha-certificado">
+                    <span>Fecha de finalización</span>
+                    <strong id="fecha"></strong>
+                </div>
+
+                <div class="firma-certificado">
+                    <div class="linea-firma"></div>
+                    <p>Programa de Formación</p>
+                    <span>Mujeres que Lideran el Desarrollo</span>
+                </div>
+
+                <div class="decoracion-inferior">✿</div>
+
+            </div>
+
+        </div>
+
+        <div class="acciones-certificado">
+            <button onclick="window.print()" class="boton-imprimir">
+                Imprimir o guardar como PDF
+            </button>
+
+            <a href="visibilidad-comunal.html" class="enlace-regresar">
+                Volver a las lecciones
+            </a>
+        </div>
+
+    </main>
+
+    <script>
+        const fechaActual = new Date();
+
+        document.getElementById("fecha").textContent =
+            fechaActual.toLocaleDateString("es-CO", {
+                day: "numeric",
+                month: "long",
+                year: "numeric"
+            });
+    </script>
+
+</body>
+</html>

@@ -2127,3 +2127,210 @@ body {
     }
 
 }
+/* CERTIFICADO DE FINALIZACIÓN */
+
+.pagina-certificado {
+    background-color: #fffaf7;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-certificado {
+    max-width: 950px;
+    margin: auto;
+}
+
+.certificado {
+    background: #ffffff;
+    padding: 18px;
+    border: 3px solid #557a68;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.marco-certificado {
+    border: 2px solid #c56f52;
+    padding: 45px 65px;
+    text-align: center;
+    position: relative;
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nombre-proyecto {
+    color: #557a68;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.decoracion-certificado,
+.decoracion-inferior {
+    color: #c56f52;
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.marco-certificado h1 {
+    font-family: 'Playfair Display', serif;
+    color: #405f50;
+    font-size: 55px;
+    margin: 5px 0 0;
+}
+
+.marco-certificado h2 {
+    font-family: 'Playfair Display', serif;
+    color: #c56f52;
+    font-size: 27px;
+    font-weight: 500;
+    margin: 0 0 25px;
+}
+
+.texto-reconocimiento {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.nombre-participante {
+    font-family: 'Playfair Display', serif;
+    color: #405f50;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.linea-nombre {
+    width: 65%;
+    height: 1px;
+    background-color: #c56f52;
+    margin-bottom: 25px;
+}
+
+.texto-finalizacion {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 690px;
+}
+
+.texto-finalizacion strong {
+    color: #405f50;
+}
+
+.mensaje-final {
+    font-family: 'Playfair Display', serif;
+    color: #c56f52;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.fecha-certificado {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #666;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.fecha-certificado strong {
+    color: #405f50;
+    font-size: 15px;
+}
+
+.firma-certificado {
+    margin-top: 30px;
+    color: #405f50;
+}
+
+.linea-firma {
+    width: 220px;
+    height: 1px;
+    background-color: #557a68;
+    margin: auto auto 8px;
+}
+
+.firma-certificado p {
+    font-weight: 600;
+    margin: 0;
+}
+
+.firma-certificado span {
+    font-size: 12px;
+    color: #777;
+}
+
+.acciones-certificado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.boton-imprimir {
+    background-color: #557a68;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-imprimir:hover {
+    background-color: #405f50;
+}
+
+.enlace-regresar {
+    color: #557a68;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.enlace-regresar:hover {
+    color: #c56f52;
+}
+
+/* FORMATO DE IMPRESIÓN */
+
+@media print {
+
+    @page {
+        size: landscape;
+        margin: 10mm;
+    }
+
+    body.pagina-certificado {
+        background: white;
+        padding: 0;
+    }
+
+    .contenedor-certificado {
+        max-width: 100%;
+    }
+
+    .certificado {
+        box-shadow: none;
+        padding: 8px;
+    }
+
+    .marco-certificado {
+        min-height: 0;
+        padding: 30px 50px;
+    }
+
+    .acciones-certificado {
+        display: none;
+    }
+
+}
